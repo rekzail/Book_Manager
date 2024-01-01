@@ -4,6 +4,7 @@ import Container from '../Container';
 import MoreReading from '../MoreReading';
 import Category from '../Category';
 
+
 export default function Index() {
   return (
     <>
@@ -11,6 +12,7 @@ export default function Index() {
     <Container></Container>
     <MoreReading></MoreReading>
     <Category></Category>
+    
     </>
   )
 }
