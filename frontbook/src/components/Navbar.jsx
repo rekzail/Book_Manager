@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Login from './Login';
+
+
+import FormLogin from './FormLogin';
 
 export default function Navbar() {
   return (
@@ -23,8 +25,9 @@ export default function Navbar() {
               <i class="bi bi-search"></i>
               </Link>
             </li>
-            <li className="nav-item mx-1 ">
-              <Login></Login>
+            <li className="nav-item mx-2 ">
+              
+              <FormLogin></FormLogin>
             </li>
           </ul>
         
