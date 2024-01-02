@@ -8,12 +8,12 @@ import Aside from "../Aside";
 import Book from "../Book";
 
 
-export default function BookPages() {
+export default function BookPages({name}) {
   return (
     <div className="mt-5  container-fluid">
       <div className="row mb-5">
         <div className="col-2 vh-100">
-          <Aside />
+          <Aside name= {name}/>
         </div>
         <div className="col-8 vh-100 mt-5">
           <div className="container">

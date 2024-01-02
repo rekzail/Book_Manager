@@ -5,14 +5,14 @@ import { NavLink,Link } from 'react-router-dom';
 
 
 
-export default function Aside() {
+export default function Aside({name}) {
 
  
   return (
     <aside className='bg-white sidebar p-2'>
     <div className='mt-3'>
       <i className="bi bi-person my-2 mx-2"></i>
-      <span className='brand-name fs-5'>Hola <b>Zail</b></span>
+      <span className='brand-name fs-5'>Hola <b>{name}</b></span>
     </div>
     <hr className='text-dark' />
     <div className="list-group list-group-flush">

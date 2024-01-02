@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
-
+import { Link } from 'react-router-dom';
 import {
   MDBBtn,
   MDBContainer,
@@ -12,6 +12,7 @@ import {
   MDBIcon,
   MDBCheckbox
 } from 'mdb-react-ui-kit';
+
 
 function FormLogin() {
   const [show, setShow] = useState(false);
@@ -47,6 +48,11 @@ function FormLogin() {
                 </MDBBtn>
 
                 <hr className="my-4" />
+                  
+                <div className="text-center">
+                <p>No tienes cuenta? <Link to='/register' onHide={handleClose}>Registrate</Link></p>
+                <p>o registrate con:</p>
+                </div>
 
                 <MDBBtn className="mb-2 w-100" size="lg" style={{ backgroundColor: '#dd4b39' }}>
                   <MDBIcon fab icon="google" className="mx-2" />

@@ -38,16 +38,10 @@ footer{
   background-color: #f7f4f4 !important;
 }
 
-.hola {
-  flex-shrink: 0; /* Evita que el navbar se expanda */
-  transition: height 0.3s; /* Agrega una transición suave de altura */
-  background-color: #FF5370 !important;
-  color: red !important; 
+.sp {
+  margin-top: 50px;
+ 
 }
-
-
-
-
 
 /* card css */
 

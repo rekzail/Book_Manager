@@ -11,9 +11,10 @@ import Footer from './components/Footer';
 import BookPages from './components/pages/BookPages';
 import Profile from './components/pages/Profile';
 import FormLogin from './components/FormLogin';
+import Register from './components/pages/Register';
 
 
-
+const name = "Zail";
 
 
 
@@ -29,10 +30,11 @@ function App() {
       <Routes>
       
         <Route path='/' element={<Index></Index>}></Route>
-        <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
-        <Route path='/dashboard/book' element={<BookPages />} />
-        <Route path='/dashboard/user' element={<Profile />} />
+        <Route path='/dashboard' element={<Dashboard name ={name}></Dashboard>}></Route>
+        <Route path='/dashboard/book' element={<BookPages name={name}/>} />
+        <Route path='/dashboard/user' element={<Profile name = {name}/>} />
         <Route path='/form' element={<FormLogin />} />
+        <Route path='/register' element={<Register />} />
       
 
       </Routes>
